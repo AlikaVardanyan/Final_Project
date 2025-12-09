@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body class="intro-page">
+
+<header class="header">
+    <div class="top-menu">
+        <a href="/projects/" class="top-btn">Проекты</a>
+        <a href="/menu/" class="top-btn">Меню</a>
+    </div>
+</header>
+
+
+
+<div class="bg-slider">
+    <img src="/media/house.jpg" class="bg-slide active">
+    <img src="/media/house1.jpg" class="bg-slide">
+    <img src="/media/house2.jpg" class="bg-slide">
+</div>
+
+
+
+<div class="center-box">
+    <div class="text t1">🏡 Welcome</div>
+    <div class="text t2">✨ Modern Architecture</div>
+    <div class="text t3">📐 Premium Designs</div>
+</div>
+
+
+
+<div class="gallery-container">
+
+    <div class="main-image-box">
+        <img id="mainImage" src="/media/tun1.jpg" class="main-image">
+    </div>
+
+    <div class="thumbs">
+        <img src="/media/tun1.jpg" class="thumb click-image active-thumb" onclick="changeMain(this)">
+        <img src="/media/tun2.jpg" class="thumb click-image" onclick="changeMain(this)">
+        <img src="/media/tun3.jpg" class="thumb click-image" onclick="changeMain(this)">
+        <img src="/media/tun4.jpg" class="thumb click-image" onclick="changeMain(this)">
+        <img src="/media/tun5.jpg" class="thumb click-image" onclick="changeMain(this)">
+    </div>
+
+</div>
+
+<div class="tabs">
+    <div class="tab active">ЭКСТЕРЬЕР 5</div>
+</div>
+
+<div class="arrows">
+    <span class="arrow arrow-left">〈</span>
+    <span class="arrow arrow-right">〉</span>
+</div>
+
+
+
+<div class="project-section">
+
+    <h2 class="section-title">О ПРОЕКТЕ</h2>
+
+    <div class="project-grid">
+
+        
+        <div class="project-left">
+
+            <h3 class="sub-title">Площади, м2</h3>
+
+            <div class="info-box">
+                <span>S ДОМА</span>
+                <span>179,58</span>
+            </div>
+
+            <div class="info-box small-left">
+                <span>S КРЫТОЙ ТЕРРАСЫ</span>
+                <span>14,80</span>
+            </div>
+
+            <div class="info-box">
+                <span>S ОТКРЫТОЙ ТЕРРАСЫ</span>
+                <span>18,92</span>
+            </div>
+
+            <h3 class="sub-title" style="margin-top:40px;">Атрибуты</h3>
+
+            <div class="info-box">
+                <span>СПАЛЬНИ</span>
+                <span>3</span>
+            </div>
+
+            <div class="info-box small-left">
+                <span>САНУЗЛЫ</span>
+                <span>2</span>
+            </div>
+
+        </div>
+
+        
+        <div class="project-right">
+
+            <h3 class="sub-title">ОСОБЕННОСТИ ПРОЕКТА</h3>
+
+            <div class="tags">
+                <span class="tag">РАЗДВИЖНЫЕ ОКНА</span>
+                <span class="tag">БАРБЕКЮ С ПЕЧЬЮ</span>
+                <span class="tag">ДЕТСКАЯ</span>
+                <span class="tag">ГАРДЕРОБНАЯ</span>
+                <span class="tag">КАБИНЕТ</span>
+                <span class="tag">КЛАДОВАЯ</span>
+                <span class="tag">КРЫЛЬЦО</span>
+                <span class="tag">МАСТЕР-СПАЛЬНЯ</span>
+                <span class="tag">МАСТЕРСКАЯ</span>
+                <span class="tag">НАВЕС ДЛЯ АВТО</span>
+                <span class="tag">ОКНО В ВАННОЙ</span>
+            </div>
+
+            <div class="description-box">
+
+                <h2 class="desc-title">Описание проекта</h2>
+
+                <div id="short-text">
+                    Проект «Рощино 2.32» — пример скандинавской красоты и функциональности.
+                </div>
+
+                <div id="full-text" class="hidden-text">
+                   Проект одноэтажного загородного дома «Рощино 2.32» площадью 179,58 кв.м — пример скандинавской красоты и функциональности.<br><br>
+
+Скандинавский характер дому придает использование серой вагонки для отделки фасада.<br>
+Оранжевые красочные вставки на фасаде придают дому особую изюминку.<br>
+Оконный профиль, подоконники и оконные откосы в том же оранжевом цвете расставляют яркие акценты в серых буднях.<br><br>
+
+Характерная для скандинавской архитектуры прямоугольная форма дома и двускатная кровля подчеркивает простоту и одновременно особенную красоту этого стиля.<br><br>
+
+Идеальная функциональность выражена в хорошо организованном уютном пространстве по принципу необходимости и достаточности.<br><br>
+
+Приватная зона — это три спальни, одна из которых с гардеробной и санузлом.<br>
+Общая зона — гостиная, объединенная с кухней-столовой, выходящая на террасу.<br><br>
+
+Террасы крытая и открытая имеют небольшую, но достаточную площадь и создают дополнительное полезное пространство для отдыха.<br><br>
+
+На крытой террасе каменная печь для барбекю с открытым живым огнем и настоящим дымом делает приготовление пищи и время, проведенное на свежем воздухе, особенно приятными, расслабляющими и запоминающимися, чего трудно достичь с помощью электрических или газовых барбекю.<br>
+Печь добавляет природный и органичный элемент к скандинавскому стилю и создает уникальный визуальный акцент.<br>
+Чтобы использовать зону барбекю вечером и ночью, предусмотрен монтаж системы освещения.<br><br>
+
+Технические помещения, такие как котельная и постирочная, являются важными составляющими функциональности дома и дают возможность эффективно управлять бытовыми задачами.<br><br>
+
+Котельная расположена в отдельном помещении с собственным входом снаружи дома.<br>
+Это не только требование газораспределительных организаций, но и удобство обслуживания оборудования.<br><br>
+
+Постирочная обычно оборудуется стиральной машиной, сушильной машиной и рабочими поверхностями для сортировки и глажки белья.<br><br>
+
+Навес для автомобиля обеспечивает удобство парковки и комфорт в межсезонье и зимнее время.<br><br>
+
+Хоз.блок для хранения инструментов, сезонного инвентаря, спортивного оборудования — это отличное решение для увеличения функциональности, которое помогает поддерживать порядок и чистоту внутри основного дома.<br>
+Для организации пространства используют различные системы хранения, такие как вешалки, полки, ящики и крючки.<br>
+Инструменты и оборудование размещают таким образом, чтобы они были легко доступны в соответствии с частотой использования.<br><br>
+
+Напоминаем, что любой проект с нашего сайта адаптируется под запросы каждой конкретной семьи и индивидуальные особенности вашего участка.<br>
+                </div>
+
+                <button id="toggle-btn" class="more-btn">Подробнее</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="plan-section">
+    <h2 class="section-title">ПЛАН</h2>
+
+    <div class="plan-container">
+
+        <div class="plan-thumbs">
+            <img src="/media/plan3.jpg" class="plan-thumb active-plan" onclick="openLightbox(0)">
+            <img src="/media/plan4.jpg" class="plan-thumb" onclick="openLightbox(1)">
+            <img src="/media/plan5.jpg" class="plan-thumb" onclick="openLightbox(2)">
+            <img src="/media/plan6.jpg" class="plan-thumb" onclick="openLightbox(3)">
+        </div>
+
+        <div class="plan-main">
+            <img id="planImageMain" src="/media/maket6.jpg" class="plan-big">
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" class="lightbox-img">
+    <span class="lightbox-arrow left" onclick="prevLightbox()">‹</span>
+    <span class="lightbox-arrow right" onclick="nextLightbox()">›</span>
+</div>
+
+<div class="work-section">
+    <h2 class="work-title">КАК МЫ РАБОТАЕМ</h2>
+
+    <div class="work-row">
+
+       
+        <div class="work-card" onclick="flipCard(this)">
+            <div class="card-inner">
+
+                <div class="card-front">
+                    <p>Наши цены — честные!</p>
+                    <img src="/media/icon1.png" class="work-icon">
+                </div>
+
+                <div class="card-back">
+                    Наши цены на сайте — честные,<br>
+                    без скрытых платежей и обязательных доп.опций.<br><br>
+                    Сметы подробные и прозрачные.
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="work-card" onclick="flipCard(this)">
+            <div class="card-inner">
+
+                <div class="card-front">
+                    <p>Цена — критерий качества</p>
+                    <img src="/media/icon2.png" class="work-icon">
+                </div>
+
+                <div class="card-back">
+                    Качество работы зависит от материалов,<br>
+                    профессионализма и опыта.<br><br>
+                    Мы работаем честно.
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="work-card" onclick="flipCard(this)">
+            <div class="card-inner">
+
+                <div class="card-front">
+                    <p>Выезд специалиста</p>
+                    <img src="/media/icon3.png" class="work-icon">
+                </div>
+
+                <div class="card-back">
+                    Выезд специалиста на участок — бесплатный.<br><br>
+                    Без обязательств и навязывания услуг.
+                </div>
+
+            </div>
+        </div>
+
+     
+        <div class="work-card" onclick="flipCard(this)">
+            <div class="card-inner">
+
+                <div class="card-front">
+                    <p>Почему не дешевле?</p>
+                    <img src="/media/icon4.png" class="work-icon">
+                </div>
+
+                <div class="card-back">
+                    Мы не экономим на качестве.<br><br>
+                    Мы строим дома, а не обещания.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="payment-section">
+
+    <h2 class="payment-title">ВАРИАНТЫ ОПЛАТЫ</h2>
+
+    <div class="payment-wrapper">
+
+        <div class="payment-slider">
+
+            <div class="pay-card">
+                <img src="/media/icon1.svg" class="pay-icon">
+                <p class="pay-text">ПОЭТАПНАЯ ОПЛАТА</p>
+            </div>
+
+            <div class="pay-card">
+                <img src="/media/icon2.svg" class="pay-icon">
+                <p class="pay-text">РАССРОЧКА</p>
+            </div>
+
+            <div class="pay-card">
+                <img src="/media/icon3.svg" class="pay-icon">
+                <p class="pay-text">ВОЕННАЯ ИПОТЕКА</p>
+            </div>
+
+            <div class="pay-card">
+                <img src="/media/icon4.svg" class="pay-icon">
+                <p class="pay-text">МАТЕРИНСКИЙ КАПИТАЛ</p>
+            </div>
+
+            <div class="pay-card">
+                <img src="/media/icon5.svg" class="pay-icon">
+                <p class="pay-text">IT ИПОТЕКА</p>
+            </div>
+
+        </div>
+
+        
+        <div class="payment-arrows">
+            <button class="p-arrow left">〈</button>
+            <button class="p-arrow right">〉</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+</html>
+
+</body>
+</html>

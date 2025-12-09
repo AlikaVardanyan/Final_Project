@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Проекты</title>
+    <link rel="stylesheet" href="{% static 'projects.css' %}">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="top-menu">
+        <a href="/projects/" class="top-btn">Проекты</a>
+        <a href="/menu/" class="top-btn">Меню</a>
+    </div>
+</header>
+
+<h1 class="projects-title">СТРОИТЕЛЬСТВО ЗАГОРОДНЫХ ДОМОВ — ПРОЕКТЫ И ЦЕНЫ</h1>
+
+<div class="projects-wrapper">
+
+   
+    <a href="/project1/" class="project-card">
+        <img src="/media/tun1.jpg" class="project-cover">
+        <div class="project-info">
+            <h3>Проект "Ликино Дулёво"</h3>
+            <p class="price">15 726 450 ₽</p>
+            <div class="icons">
+                <span>🏠 Кирпич</span>
+                <span>🏗 Газобетон</span>
+                <span>🪵 Каркас</span>
+            </div>
+        </div>
+    </a>
+
+   
+    <a href="/project2/" class="project-card">
+        <img src="/media/tnak1.jpg" class="project-cover">
+        <div class="project-info">
+            <h3>Проект "Репино 2"</h3>
+            <p class="price">27 635 175 ₽</p>
+            <div class="icons">
+                <span>🏠 Кирпич</span>
+                <span>🏗 Газобетон</span>
+                <span>🪵 Каркас</span>
+            </div>
+        </div>
+    </a>
+
+</div>
+
+</body>
+</html>
