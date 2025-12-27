@@ -9,7 +9,7 @@ class Listing(models.Model):
     price = models.IntegerField()
     area = models.IntegerField(help_text="m²")
     address = models.CharField(max_length=255)
-    image = models.URLField(blank=True)  # արագ տարբերակ՝ URL
+    image = models.URLField(blank=True)  
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
